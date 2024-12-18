@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddContactPage</title>
+    <style>
+        * {
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: "Roboto Mono", monospace;
+        }
+
+        .three {
+            width: 50%;
+
+        }
+
+        .three #addc {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .color {
+            background-image: url("https://www.shutterstock.com/image-illustration/3d-render-human-social-network-600nw-548542618.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        input[type="text"],
+        [type="email"]
+         {
+            border: "none";
+            border-radius: 20px;
+            /* box-shadow: 1px 2px 3px grey; */
+            padding: 1%;
+            margin-bottom: 1%;
+            width: 90%;
+        }
+
+        .button {
+            width: 90%;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(189, 56, 76);
+            margin-bottom: 2%;
+        }
+
+        .box {
+            background-color:white;
+            width: 30%;
+            padding: 1%;
+            margin-top: 15%;
+            margin-left: 35%;
+            margin-bottom: 12%;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="color">
+    <div class="box">
+        <center>
+        <h1>Add Contact</h1>
+        <form id="addc" method="POST">
+            <div class="three">
+            <label >Name:</label>
+            <input type="text" placeholder="enter name" name="name"><br><br>
+            <label>Phone:</label>
+            <input type="text" placeholder="enter phoneno" name="phone"><br><br>
+            <label >Email:</label>
+            <input type="email" placeholder="ex:jsb@hmail.com" name="email" ><br><br>
+            <button class="button">Submit</button>
+        </div>
+        </form>
+    </center>
+    </div>
+    
+</body>
+</html>

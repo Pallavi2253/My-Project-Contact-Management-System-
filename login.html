@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        * {
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: "Roboto Mono", monospace;
+        }
+
+        .two {
+            width: 50%;
+
+        }
+
+        .two #login {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .color {
+            background-image: url("https://images.unsplash.com/photo-1618044619888-009e412ff12a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bG9naW58ZW58MHx8MHx8fDA%3D");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        input[type="text"],
+        [type="email"],
+        [type="password"] {
+            border: "none";
+            border-radius: 20px;
+            /* box-shadow: 1px 2px 3px grey; */
+            padding: 1%;
+            margin-bottom: 1%;
+            width: 90%;
+        }
+
+        .button {
+            width: 90%;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(189, 56, 76);
+            margin-bottom: 2%;
+        }
+
+        .box {
+            background-color: white;
+            width: 30%;
+            padding: 1%;
+            margin-top: 15%;
+            margin-left: 35%;
+            margin-bottom: 12%;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="color">
+    <div class="box">
+        <center>
+            <form class="login" method="POST">
+                <div class="two">
+                    <h1>Login</h1>
+                    <label>Username:</label>
+                    <input type="text" placeholder="Enter username" name="usname"><br><br>
+                    <label>email:</label>
+                    <input type="email" placeholder="k@gmail.com" name="email"><br><br>
+                    <label>phonenumber:</label>
+                    <input type="text" placeholder="976xxxxxxx" name="phone"><br><br>
+                    <label>password:</label>
+                    <input type="password" placeholder="enter password" name="pwd"><br><br>
+                    <button class="button">submit</button>
+                </div>
+            </form>
+        </center>
+    </div>
+</body>
+
+</html>

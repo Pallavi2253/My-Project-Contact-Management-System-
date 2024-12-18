@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcomepage</title>
+    <style>
+        .main {
+            background-image: url("https://www.shutterstock.com/image-photo/businessman-using-laptop-personal-information-600nw-2446054229.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .wel {
+            margin-top: 20%;
+            margin-left: 10%;
+            margin-right: 4%;
+            /* color: yellow;
+            background-color: skyblue; */
+        }
+
+        .btn1 {
+            color: white;
+            border-radius: 12px;
+            background-color: red;
+            width: 80px;
+            height: 30px;
+            font-size: 18px;
+
+        }
+
+        .btn2 {
+            color: white;
+            border-radius: 12px;
+            background-color: red;
+            width: 80px;
+            height: 30px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div class="wel">
+        <center>
+            <h1>Welcome to our contact management system</h1>
+            <a href="{{url_for('create')}}"> <button class="btn1">create</button></a>
+            <a href="{{url_for('login')}}"><button class="btn2">login</button></a>
+        </center>
+    </div>
+</body>
+
+</html>

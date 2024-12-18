@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboardpage</title>
+    <style>
+        .color{
+            background-image: url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .dash{
+            margin-left: 29%;
+            margin-top: 9%;
+
+        }
+        .dash h1{
+            color:darkmagenta;
+            font-size: 50px;
+        }
+        .b1{
+            background-color: burlywood;
+            /* text-decoration: none; */
+            font-size: 23px;
+            border-radius: 20px;
+        }
+        .b2{
+            background-color:burlywood;
+            /* text-decoration: none; */
+            font-size: 23px;
+            border-radius: 20px;
+           
+        }
+        .b3{
+            background-color: burlywood;
+            /* text-decoration: none; */
+            font-size: 23px;
+            border-radius: 20px;
+        }
+        .b4{
+            background-color:burlywood;
+            /* text-decoration: none; */
+            font-size: 23px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="color">
+    <div class="dash">
+        <h1 align="justify">^^^Dashboard^^^</h1>
+        <button class="b1"><a href="{{url_for('addcontacts',pemail=pemail)}}">Addcontacts</button></a>
+        <button class="b2"><a href="{{url_for('editcontact',pemail=pemail)}}">Editcontacts</button></a>
+        <button class="b3"><a href="{{url_for('viewcontacts',pemail=pemail)}}">Viewcontacts</button></a>
+        <button class="b4"><a href="{{url_for('delete',pemail=pemail)}}">Deletecontacts</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Createpage</title>
+    <style>
+        * {
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: "Roboto Mono", monospace;
+        }
+
+        .one {
+            width: 50%;
+
+        }
+
+        .one #create {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* background color for full form */
+        .color {
+            background-image: url("https://www.shutterstock.com/image-photo/using-computerhand-typing-keyboard-laptop-600nw-1774949384.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        input[type="text"],
+        [type="email"],
+        [type="password"] {
+            border: "none";
+            border-radius: 20px;
+            box-shadow: 1px 2px 3px grey;
+            padding: 1%;
+            margin-bottom: 1%;
+            width: 90%;
+        }
+
+        .button {
+            width: 90%;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(189, 56, 76);
+            margin-bottom: 2%;
+        }
+
+        .box {
+            background-color: aliceblue;
+            width: 30%;
+            padding: 1%;
+            margin-top: 12%;
+            margin-left: 35%;
+            margin-bottom: 12%;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="color">
+    <div class="box">
+        <center>
+            <form id=create method="POST">
+                <div class="one">
+                    <h1>Account Registration</h1>
+                    <label align="justify">Username:</label>
+                    <input type="text" placeholder="Enter username" name="uname"><br><br>
+                    <label align="justify">email:</label>
+                    <input type="email" placeholder="k@gmail.com" name="email"><br><br>
+                    <label align="justify">phonenumber:</label>
+                    <input type="text" placeholder="976xxxxxxx" name="phone"><br><br>
+                    <label align="justify">password:</label>
+                    <input type="password" placeholder="enter password" name="pwd"><br><br>
+                    <label align="justify">confirm password:</label>
+                    <input type="password" placeholder="enter password" name="cpwd"><br><br>
+                    <button class="button">Submit</button>
+                </div>
+
+            </form>
+        </center>
+    </div>
+
+</body>
+
+</html>

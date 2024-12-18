@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditContactPage</title>
+    <style>
+        * {
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: "Roboto Mono", monospace;
+        }
+
+        .four {
+            width: 50%;
+
+        }
+
+        .four #editc {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .color {
+            background-image: url("https://www.shutterstock.com/image-photo/professional-networking-concept-icons-business-260nw-462670489.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        input[type="text"],
+        [type="email"]
+         {
+            border: "none";
+            border-radius: 20px;
+            /* box-shadow: 1px 2px 3px grey; */
+            padding: 1%;
+            margin-bottom: 1%;
+            width: 90%;
+        }
+
+        .button {
+            width: 90%;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(189, 56, 76);
+            margin-bottom: 2%;
+        }
+
+        .box {
+            background-color:white;
+            width: 30%;
+            padding: 1%;
+            margin-top: 15%;
+            margin-left: 35%;
+            margin-bottom: 12%;
+            border-radius: 15px;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body class="color">
+    <div class="box">
+        <center>
+    <h1>Edit Contact</h1>
+    <form class="editc" method="POST">
+        <div class="four">
+        <label >Name:</label>
+        <input type="text" placeholder="enter name" name="name" ><br><br>
+        <label >Phone:</label>
+        <input type="text" placeholder="enter phoneno" name="phone"><br><br>
+        <label >Email:</label>
+        <input type="email" placeholder="asd@gmail.com" name="email" ><br><br>
+        <button class="button">Save Changes</button>
+    </div>
+    </form>
+</center>
+</div>
+    
+</body>
+</html>

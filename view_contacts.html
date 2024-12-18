@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewContactPage</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #66b0b5;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #7c3333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #cfb0b0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>View your contacts</h1>
+    <p>ViewContacts:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>ContactName</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>{{i}}</td>
+                <td>{{ data[i]['name']}}</td>
+                <td>{{ data[i]['phone']}}</td>
+                <td>{{ data[i]['email']}}</td>
+            </tr>
+            {% endfor %}
+            <!-- More rows can be added here dynamically through backend -->
+        </tbody>
+    </table>
+</body>
+
+</html>
